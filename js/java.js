@@ -28,13 +28,26 @@ function agregarActividad() {
 }
 
 function eliminarActividad(event) {
-    const fila = event.target.parentElement.parentElement;
-    fila.remove();
+    var confirmacion = confirm("¿Esta   seguro de eliminar este elemento?");
+
+    if(confirmacion) {
+        const fila = event.target.parentElement.parentElement;
+        fila.remove();
+    }
 }
+
 
 function  modificarActividad (event){
     const fila = event.target.parentElement.parentElement;
-    
 
+    const actividad = prompt("Modificar actividad:", fila.cells[2].textContent);
+    const nota = prompt("Modificar nota:", fila.cells[3].textContent);
+    if(actividad &&  nota){
+        fila.cells[2].textContent= actividad;
+        fila.cells[3].textContent= notas;
+
+    }
+    
+    
 }
 agregarBtn.addEventListener('click', agregarActividad);
