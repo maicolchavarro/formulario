@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+        "h h . . . s s"
+        "h h n n n s s"
+        "h h n n n s s"
+        "h h n n n p p"
+        "h h n n n p p"
+        "h h . . . p p"
+        "h h . . . . .";
+}
+
+.header {
+    background-color: #00ffff;
+    grid-area: h;
+}
+
+.tabla {
+    background-color: #8a2be2;
+    grid-area: n;
+}
+
+.promedio {
+    background-color: #9acd32;
+    grid-area: s;
+}
+
+.actividad {
+    background-color: #1148ad;
+    grid-area: p;
+}
