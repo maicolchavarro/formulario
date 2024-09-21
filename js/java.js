@@ -28,7 +28,7 @@ function agregarActividad() {
 }
 
 function eliminarActividad(event) {
-    var confirmacion = confirm("¿Esta   seguro de eliminar este elemento?");
+    var confirmacion = confirm("¿Esta seguro de eliminar este elemento?");
 
     if(confirmacion) {
         const fila = event.target.parentElement.parentElement;
@@ -44,7 +44,7 @@ function  modificarActividad (event){
     const nota = prompt("Modificar nota:", fila.cells[3].textContent);
     if(actividad &&  nota){
         fila.cells[2].textContent= actividad;
-        fila.cells[3].textContent= notas;
+        fila.cells[3].textContent= nota;
 
     }
     
