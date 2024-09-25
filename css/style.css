@@ -23,21 +23,36 @@ main {
 }
 
 .header {
-    background-color: aqua;
+    background-color: #4a90e2; 
     grid-area: h;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
 }
 
 .tabla {
-    background-color: blueviolet;
+    background-color: #8913bb; 
     grid-area: n;
+    color: white;
+    padding: 20px;
 }
 
 .promedio {
-    background-color: yellowgreen;
+    background-color: #2ecc71; 
     grid-area: p;
+    color: white;
+    padding: 20px;
 }
 
 .actividad {
-    background-color: darkblue;
+    background-color: #e74c3c; 
     grid-area: s;
+    color: white;
+    padding: 20px;
 }
+
+
+
+
+
